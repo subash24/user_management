@@ -31,8 +31,8 @@ const AddUser = ({handleClick}) => {
    }
   return (
       <div className="User-panel">
-          <Alert variant="success" className={`text-center ${success?'cus-show':'cus-hide'}`} dismissible onClose={()=>{setsuccess(false)}}>User successfully Added{' '}<Alert.Link><Link to='/' style={{color:'inherit'}}>View All Users</Link></Alert.Link></Alert>
-          <Alert variant="danger" className={`text-center ${failure?'cus-show':'cus-hide'}`} dismissible onClose={()=>{setfailure(false)}}>The Username or Email You entered already exists{' '}<Alert.Link><Link to='/' style={{color:'inherit'}}>View Existing Users</Link></Alert.Link></Alert>
+          <Alert variant="success" className={`text-center ${success?'cus-show':'cus-hide'}`} dismissible onClose={()=>{setsuccess(false)}}>User successfully Added{' '}<Alert.Link><Link to='/user_management/' style={{color:'inherit'}}>View All Users</Link></Alert.Link></Alert>
+          <Alert variant="danger" className={`text-center ${failure?'cus-show':'cus-hide'}`} dismissible onClose={()=>{setfailure(false)}}>The Username or Email You entered already exists{' '}<Alert.Link><Link to='/user_management/' style={{color:'inherit'}}>View Existing Users</Link></Alert.Link></Alert>
         <Container>
             <div className = 'form-cus'>
             <h1 className="text-center mb-3 pt-2">USER FORM</h1>

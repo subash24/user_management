@@ -13,12 +13,12 @@ const Nav = (props) => {
                 <li className="sidebar-brand">
                         Navigation
                 </li>
-                <NavLink to='/' exact={true} activeClassName="is-active" style={{textDecoration:"none"}}> 
+                <NavLink to='/user_management/' exact={true} activeClassName="is-active" style={{textDecoration:"none"}}> 
                 <li>
                     <span className="link"><FaUsers style={{fontSize:'22px',margin:"5px"}}/>Existing User</span>
                 </li>
                 </NavLink>
-               <NavLink to='adduser'  activeClassName="is-active" style={{textDecoration:"none"}}>
+               <NavLink to='/user_management/adduser/'  activeClassName="is-active" style={{textDecoration:"none"}}>
                 <li>
                     <span className="link"><ImUserPlus style={{fontSize:'22px',margin:"5px"}}/>Create User</span>
                 </li>

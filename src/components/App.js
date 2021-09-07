@@ -77,8 +77,8 @@ const App = () => {
     <Router>
         <Nav toggleClass = {closeSidebar}/>
         <Switch>
-        <Route path='/adduser' render = {(props)=>(<AddUser {...props} handleClick={addUserToServer}/>)}/>
-        <Route path='/' exact render={(props)=>(<UserList users = {users} deleteUser={deleteUser} usercount = {users.length}/>)}/>
+        <Route path='/user_management/adduser/' render = {(props)=>(<AddUser {...props} handleClick={addUserToServer}/>)}/>
+        <Route path='/user_management/' exact render={(props)=>(<UserList users = {users} deleteUser={deleteUser} usercount = {users.length}/>)}/>
         </Switch>
     </Router>
         </div>

@@ -11,7 +11,7 @@ const UserList = ({users,deleteUser,usercount}) => {
     users = users.filter(u=>(u.fist_name !== ''));
     return (
         <>
-        <Alert variant='primary' className={(usercount===0)?'cus-show':'cus-hide'}onClose={()=>{setcount(1)}} dismissible>Currently There are No users{' '}<Alert.Link><Link style={{color:'inherit'}}to='/adduser'>Click to Add New User</Link></Alert.Link></Alert>
+        <Alert variant='primary' className={(usercount===0)?'cus-show':'cus-hide'}onClose={()=>{setcount(1)}} dismissible>Currently There are No users{' '}<Alert.Link><Link style={{color:'inherit'}}to='/user_management/adduser'>Click to Add New User</Link></Alert.Link></Alert>
         <Container>
         <div id="page-content-wrapper">
             <div className="container-fluid">
