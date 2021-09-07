@@ -1,0 +1,18 @@
+div.cus-hide
+{
+    display: none;
+    visibility: hidden;
+}
+div.cus-show
+{ 
+    display: block;
+    visibility: visible;
+}
+
+.form-cus
+{
+    max-width: 480px;
+    background-color:#f2f3f3;
+    margin: 20px auto;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
+}

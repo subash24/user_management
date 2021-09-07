@@ -1,0 +1,61 @@
+.card
+{
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin: 1.66%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 38px;
+    margin : 5px;
+}
+.card .item
+{
+    width: 60%;
+}
+.card .delete
+{
+    width: 0;
+    font-size: 0;
+    height: 100%;
+    display: block;
+    transition: all 0.3s ease-in;
+}
+
+.card:hover .delete
+{
+    width: 50px;
+    font-size: 42px;
+    padding-top: 10px;
+    text-align: center;
+}
+div.cus-hide
+{
+    display: none;
+    visibility: hidden;
+}
+div.cus-show
+{ 
+    display: block;
+    visibility: visible;
+}
+.form-cus
+{
+    max-width: 480px;
+    background-color:#f2f3f3;
+    margin: 20px auto;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2)
+}
