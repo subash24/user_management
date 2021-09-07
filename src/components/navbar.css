@@ -71,24 +71,24 @@
     font-family: 'Poppins';
     padding: 10px 10px;
 }
-.sidebar-nav li span.link {
+.sidebar-nav  span.link {
     display: block;
     text-decoration: none;
     color: #999999;
 }
 
-.sidebar-nav li p.span:hover {
+.sidebar-nav  span.link:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #191f25;
+}
+.sidebar-nav .is-active  span.link{
     text-decoration: none;
     color: #fff;
     background: #27A9E3;
 }
-.sidebar-nav .is-active li span.link{
-    text-decoration: none;
-    color: #fff;
-    background: #27A9E3;
-}
-.sidebar-nav li span.link:active,
-.sidebar-nav li span.link:focus {
+.sidebar-nav  span.link:active,
+.sidebar-nav  span.link:focus {
     text-decoration: none;
 }
 
@@ -100,11 +100,11 @@
     padding: 10px 0;
 }
 
-.sidebar-nav > .sidebar-brand p.link {
+.sidebar-nav > .sidebar-brand span.link {
     color: #999999;
 }
 
-.sidebar-nav > .sidebar-brand p.link:hover {
+.sidebar-nav > .sidebar-brand span.link:hover {
     color: #fff;
     background: none;
 }

@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter as Router, Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 import UserList from './UserList';
 import Nav from './Nav';
 import AddUser from './AddUser';
@@ -77,8 +77,8 @@ const App = () => {
     <Router>
         <Nav toggleClass = {closeSidebar}/>
         <Switch>
-        <Route path='/user_management/adduser' render = {(props)=>(<AddUser {...props} handleClick={addUserToServer}/>)}/>
-        <Route path='/user_management' exact render={(props)=>(<UserList users = {users} deleteUser={deleteUser} usercount = {users.length}/>)}/>
+        <Route path='/adduser' render = {(props)=>(<AddUser {...props} handleClick={addUserToServer}/>)}/>
+        <Route path='/' exact render={(props)=>(<UserList users = {users} deleteUser={deleteUser} usercount = {users.length}/>)}/>
         </Switch>
     </Router>
         </div>
